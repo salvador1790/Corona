@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <title>Document</title>
+</head>
+
+<body id="quizBod">
+    <div id="quizWrapper">
+        <div id="introQuiz">
+            <span id="qh1">Quiz</span>
+            <p>Welcome! Test your knowledge about COVID-19 and see how much you really know about the novel corona
+                virus. Are you
+                more factual or do you give into the media and FAKE news?</p>
+            <button onclick="start()" id="startBtn">Start</button>
+        </div>
+        <div id="floatingVirus">
+            <img class="covid1" src="./styles/images/virus.png" alt="">
+            <img class="covid2" src="./styles/images/virus (2).png" alt="">
+            <img class="covid3" src="./styles/images/virus (1).png" alt="">
+        </div>
+    </div>
+
+    <div id="quizContainer">
+        <div id="questionCont">
+        <div class="avatarImg"></div>
+        <div id="questions"></div>
+    </div>
+    <div id="answerCont">
+            <div onclick="wrongAns1()" class="option" id="dropplets"></div>
+            <div onclick="wrongAns1()" class="option" id="Aerosol"></div>
+            <div onclick="wrongAns1()" class="option" id="surfaces"></div>
+            <div onclick="correctAns1()" class="option" id="5g"></div>
+            <div onclick="wrongAns2()" class="option" id="Taiwan"></div>
+            <div onclick="correctAns2()" class="option" id="Wuhan"></div>
+            <div onclick="wrongAns2()" class="option" id="Italy"></div>
+            <div onclick="wrongAns2()" class="option" id="Spain"></div>
+            <div onclick="wrongAns3()" class="option" id="recession"></div>
+            <div onclick="correctAns3()" class="option" id="flattenCurve"></div>
+            <div onclick="wrongAns3()" class="option" id="opression"></div>
+            <div onclick="wrongAns3()" class="option" id="killVirus"></div>
+           
+        </div>
+        <div id="correctNotif"></div>
+    </div>
+
+</body>
+
+</html>
